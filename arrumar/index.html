@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início | Diário com Cadeado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home" data-page="home">
+  <header class="site-header">
+    <a class="logo" href="index.html">Diário com Cadeado</a>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" id="linkInicio">Início</a></li>
+        <li id="itemLogin"><a href="login.html">Login</a></li>
+        <li class="has-sub"><a href="#" id="btn-sobre">Sobre</a>
+          <ul class="submenu" id="menu-vertical-sobre">
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="#" id="btn-contato">Contato</a>
+          <ul class="submenu" id="menu-vertical-contato">
+            <li><a href="#telefones">Telefones</a></li>
+            <li><a href="#email">Email</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a class="btn" href="login.html" id="btnLogin">Login</a>
+  </header>
+  <main>
+    <div class="home-grid">
+
+      <!-- IMAGEM 2 (esquerda): troque o arquivo em src e o texto em alt -->
+      <figure class="img-slot slot-esq" data-label="img 2">
+        <img src="imagens/img2.jpg" alt="Descrição da imagem 2">
+      </figure>
+
+      <section class="hero">
+        <h1>Seu diário, trancado a sete chaves</h1>
+        <p>O Diário com Cadeado é um bullet journal digital e privado: depois de entrar, você escreve suas notas do dia, escolhe o humor com um emoji e salva tudo em um espaço que só você acessa.</p>
+        <a class="btn" href="cadastro.html">Cadastre-se e comece a escrever</a>
+      </section>
+
+      <!-- IMAGEM 3 (direita) -->
+      <figure class="img-slot slot-dir" data-label="img 3">
+        <img src="imagens/img3.jpg" alt="Descrição da imagem 3">
+      </figure>
+
+      <!-- IMAGEM 1 (embaixo, centralizada) -->
+      <figure class="img-slot slot-baixo" data-label="img 1">
+        <img src="imagens/img1.jpg" alt="Descrição da imagem 1">
+      </figure>
+
+    </div>
+  </main>
+  <section class="info" id="info" aria-label="Informações">
+    <div class="info-linha">
+      <p class="info-item" id="empresa"><strong>Empresa:</strong> Diários online</p>
+      <p class="info-item" id="clientes"><strong>Clientes:</strong> estudantes, professores, etc...</p>
+    </div>
+    <div class="info-linha">
+      <p class="info-item" id="telefones"><strong>Telefones:</strong> xx xxxxx-xxxx</p>
+      <p class="info-item" id="email"><strong>Email:</strong> xxxxxxxxx@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Hoje é <span id="dataAtual"></span>. Todos os direitos reservados. Desenvolvido por: Nome do Aluno 1, Nome do Aluno 2.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

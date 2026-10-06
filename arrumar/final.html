@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu diário | Diário com Cadeado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="" data-page="diario">
+  <header class="site-header">
+    <a class="logo" href="index.html">Diário com Cadeado</a>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" id="linkInicio">Início</a></li>
+        <li id="itemLogin"><a href="login.html">Login</a></li>
+        <li class="has-sub"><a href="#" id="btn-sobre">Sobre</a>
+          <ul class="submenu" id="menu-vertical-sobre">
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="#" id="btn-contato">Contato</a>
+          <ul class="submenu" id="menu-vertical-contato">
+            <li><a href="#telefones">Telefones</a></li>
+            <li><a href="#email">Email</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <span class="user-name" id="userName"></span>
+  </header>
+  <main>
+    <section class="hero hero-small">
+      <h1>Seu diário, trancado a sete chaves</h1>
+      <p>O Diário com Cadeado é um bullet journal digital e privado: escreva suas notas do dia, escolha o humor com um emoji e salve tudo em um espaço que só você acessa.</p>
+      <div class="tools">
+        <button class="btn" type="button" id="btnCalendario">Calendário</button>
+        <button class="btn" type="button" id="btnEstatisticas">Estatísticas</button>
+        <button class="btn" type="button" id="btnConfig">Configurações</button>
+      </div>
+    </section>
+
+    <section class="card card-wide" id="areaDiario">
+      <h2>Como foi seu dia?</h2>
+      <div class="moods" id="moods" role="radiogroup" aria-label="Humor do dia">
+        <button type="button" class="mood" data-mood="😄" aria-label="Feliz">😄</button>
+        <button type="button" class="mood" data-mood="🙂" aria-label="Bem">🙂</button>
+        <button type="button" class="mood" data-mood="😐" aria-label="Neutro">😐</button>
+        <button type="button" class="mood" data-mood="😔" aria-label="Triste">😔</button>
+        <button type="button" class="mood" data-mood="😡" aria-label="Irritado">😡</button>
+      </div>
+      <label for="nota">Nota do dia</label>
+      <textarea id="nota" rows="5" placeholder="Escreva aqui o que quiser guardar..."></textarea>
+      <p class="msg" id="mensagem" role="alert"></p>
+      <button type="button" class="btn" id="btnSalvar">Salvar nota</button>
+      <h2>Suas notas</h2>
+      <ul class="entries" id="listaNotas"></ul>
+    </section>
+  </main>
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close" id="modalFechar" aria-label="Fechar">✕</button>
+      <div id="modalConteudo"></div>
+    </div>
+  </div>
+
+  <section class="info" id="info" aria-label="Informações">
+    <div class="info-linha">
+      <p class="info-item" id="empresa"><strong>Empresa:</strong> Diários online</p>
+      <p class="info-item" id="clientes"><strong>Clientes:</strong> estudantes, professores, etc...</p>
+    </div>
+    <div class="info-linha">
+      <p class="info-item" id="telefones"><strong>Telefones:</strong> xx xxxxx-xxxx</p>
+      <p class="info-item" id="email"><strong>Email:</strong> xxxxxxxxx@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Hoje é <span id="dataAtual"></span>. Todos os direitos reservados. Desenvolvido por: Víctor de Morais, Annelyze.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro | Diário com Cadeado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="" data-page="cadastro">
+  <header class="site-header">
+    <a class="logo" href="index.html">Diário com Cadeado</a>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" id="linkInicio">Início</a></li>
+        <li id="itemLogin"><a href="login.html">Login</a></li>
+        <li class="has-sub"><a href="#" id="btn-sobre">Sobre</a>
+          <ul class="submenu" id="menu-vertical-sobre">
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="#" id="btn-contato">Contato</a>
+          <ul class="submenu" id="menu-vertical-contato">
+            <li><a href="#telefones">Telefones</a></li>
+            <li><a href="#email">Email</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section class="card">
+      <h1>Cadastro</h1>
+      <form id="formCadastro" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="voce@email.com">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Crie uma senha">
+        <p class="msg" id="mensagem" role="alert"></p>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <section class="info" id="info" aria-label="Informações">
+    <div class="info-linha">
+      <p class="info-item" id="empresa"><strong>Empresa:</strong> Diários online</p>
+      <p class="info-item" id="clientes"><strong>Clientes:</strong> estudantes, professores, etc...</p>
+    </div>
+    <div class="info-linha">
+      <p class="info-item" id="telefones"><strong>Telefones:</strong> xx xxxxx-xxxx</p>
+      <p class="info-item" id="email"><strong>Email:</strong> xxxxxxxxx@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Hoje é <span id="dataAtual"></span>. Todos os direitos reservados. Desenvolvido por: Víctor de Morais, Annelyze.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
